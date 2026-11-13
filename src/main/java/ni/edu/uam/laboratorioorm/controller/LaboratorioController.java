@@ -199,7 +199,7 @@ public class LaboratorioController {
         }
 
         if (equipoDAO.existeCodigo(codigo, idActual)) {
-            throw new IllegalArgumentException("Ya existe un equipo registrado con el código '" + codigo + "'.");
+           throw new IllegalArgumentException("Ya existe un equipo registrado con el código '" + codigo + "'.");
         }
 
         Equipo equipo = new Equipo();
